@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+.container {
+
+ background-color:  #000;
+  background-image: 
+      radial-gradient(circle at bottom left, #3c2f00 0%, #000000 80%);
+  color: #f3f4f6; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: system-ui;
+  height: 90vh;
+}
+
+.inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+align-content: center;
+  max-width: 800px;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 120px;
+  position: relative;
+  top: 60px;
+}
+
+.heading {
+  font-size: 75px;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #ffcc33;
+}
+
+/* @media (min-width: 640px) {
+  .heading {
+    font-size: 3rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .heading {
+    font-size: 3.75rem;
+  }
+} */
+
+.textWrapper {
+  position: relative;
+  min-height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.subHeading {
+  font-size: 35px;
+  font-weight: 600;
+  color: #fff2b3;
+  overflow: hidden;
+  max-width: 100%;
+}
+/* 
+@media (min-width: 640px) {
+  .subHeading {
+    font-size: 1.875rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .subHeading {
+    font-size: 2.25rem;
+  }
+} */
+
+/* Blinking cursor */
+.cursor {
+  border-right: 2px solid;
+  animation: blink-caret 0.75s step-end infinite;
+  margin-left: 2px;
+}
+
+
+
+.crafting{
+  color: #9aa2b1;
+  font-size: 22px;
+  margin-bottom: 30px;
+  white-space: nowrap;
+
+}
+
+
+.btngen{
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.btn1{
+  color: #0d0f11;
+  font-size: 18px;
+  background-color: #ffcc33;
+    padding: 8px 20px;
+  border-radius: 10px;
+font-family: system-ui;
+font-weight: 500;
+}
+
+.btn2{
+  color: #ffcc33;
+  font-size: 18px;
+  background-color: #0d0f11;
+  border: 1px solid #ffcc33;
+  padding: 8px 20px;
+  border-radius: 10px;
+  font-family: system-ui;
+font-weight: 500;
+}
+
+
+.downicn{
+  display: flex;
+  color: #ffcc33;
+  justify-content: center;
+  align-items: center;
+ position: relative;
+ top: 40px;
+}
+
+.downicn svg{
+  width: 20px;
+  height: 20px;
+}
+
+.downicn {
+  
+  font-size: 2rem;
+  color: #ffcc33;
+  animation: slow-bounce 2.0s infinite ease-in-out;
+}
+
+@keyframes slow-bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(12px); /* adjust how far it bounces */
+  }
+}

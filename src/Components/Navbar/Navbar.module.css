@@ -1,0 +1,28 @@
+.gennav{
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 20px;
+background-color: #121417;
+}
+
+.obinna{
+font-family: system-ui;
+color: #ffcc33;
+font-weight: 500;
+font-size: 24px;
+}
+
+.navlinks{
+    display: flex   ;
+font-size: 16px;
+font-family: system-ui;
+color: #fff2b3;
+font-weight: 500;
+gap: 20px;
+}
+
+
+.navlinks a:hover{
+    color: #fce15e;
+}
