@@ -1,4 +1,108 @@
 .genskills{
+   display: flex;
+   flex-direction: column;
+    background-color: #121417;
+    
+}
+
+.skillscontent{
+     display: flex;
+    flex-direction: column;
+    align-items: center;
+  height: 85vh;
+    position: relative;
+    top: 53px;
+}
+
+.se{
+font-size: 48px;
+font-family: system-ui;
+font-weight: 700;
+color: #fff2b3;
+}
+
+.ac{
+font-size: 20px;
+color: #9aa2b1;
+font-family: system-ui;
+text-align: center;
+}
+
+
+ /* USESTATE BUTTON */
+
+
+
+.segen{
+    display: flex;
+   justify-content: center;
+   flex-direction: row;
+    background-color: #ffcc33;
+    margin-top: 60px;
+    padding-left: 7px;
+    padding-right: 7px;
+    border-radius: 20px;
+    max-width: 270px;
+    gap: 50px;
+    font-size: 16px;
+    color: #121417;
+font-family: system-ui;
+    font-weight: 500;
+    
+}
+
+.activeBtn{
     background-color: #ffffff;
-    height: 100vh;
+    padding: 5px;
+    border-radius: 20px;
+/* width: 160px; */
+color: #121417;
+}
+
+.btn1, .btn2{
+       display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    white-space: nowrap;
+
+}
+
+.btn1 button, .btn2 button{
+   display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.techndsoft{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #ffffff;
+     margin-top: 25px;
+}
+
+.tendli ,.gensoft{
+margin-top: 20px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+
+.te, .pq{
+font-size: 30px;
+color: #ffcc33;
+font-family: system-ui;
+    font-weight: 500;
+}
+
+.tech, .soft{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 10px;
+   
 }

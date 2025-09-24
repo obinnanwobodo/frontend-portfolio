@@ -10,7 +10,7 @@
   align-items: center;
   justify-content: center;
   font-family: system-ui;
-  height: 90vh;
+  height: 100vh;
 }
 
 .inner {
@@ -21,7 +21,7 @@ align-content: center;
   max-width: 800px;
   width: 100%;
   text-align: center;
-  margin-bottom: 120px;
+
   position: relative;
   top: 60px;
 }

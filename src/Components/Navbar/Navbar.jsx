@@ -8,6 +8,7 @@ const Navbar = () => {
   return (
     <div className={`${styles.gennav}`}>
 
+
 <h2 className={`${styles.obinna}`}>OBINNA</h2>
 
 
