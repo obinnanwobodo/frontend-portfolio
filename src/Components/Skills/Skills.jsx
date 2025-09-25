@@ -68,10 +68,23 @@ const Skills = () => {
 
               <div className={styles.soft}>
                 <li>Communication</li>
-                <li>Teamwork</li>
+                <li>Collaboration & Teamwork</li>
                 <li>Problem-Solving</li>
                 <li>Time Management</li>
               </div>
+
+
+<div className={styles.soft}>
+
+<li>Emotional Intelligence</li>
+                <li>Adaptability</li>
+                <li>Empathy</li>
+                <li>Innovation</li>
+                <li>Attention to Detail</li>
+
+</div>
+
+
             </div>
 
           )}

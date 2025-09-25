@@ -1,0 +1,115 @@
+.genrec{
+
+    background-color: #121417;
+   
+}
+
+
+.gencontent{
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+  height: 500vh;
+    position: relative;
+    top: 53px;
+}
+
+.rt{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+
+}
+
+
+.rec{
+font-size: 48px;
+font-family: system-ui;
+font-weight: 700;
+color: #fff2b3;
+
+}
+
+
+.thep{
+font-size: 20px;
+color: #9aa2b1;
+font-family: system-ui;
+text-align: center;
+
+}
+
+
+
+
+
+
+    /* PROJECT MAPPING */
+
+
+
+.genworksmap{
+color: #ffffff;
+}
+
+
+.eachofthem{
+
+}
+
+
+.eachcontent{
+display: flex;
+}
+
+.images{
+    display: flex;
+background-color: red;
+justify-content: center;
+align-items: center;
+padding: 10px;
+}
+
+
+.images img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  
+}
+
+
+.desktopimg img {
+  max-width: 500px; 
+}
+
+
+.mobileimg img {
+  max-width: 200px;
+  max-height: 400px;
+}
+
+
+.alltexts{
+
+}
+
+.prona{
+
+}
+
+
+.pronic{
+
+
+}
+
+
+.desc{
+
+}
+
+.bldndtools{
+
+}
