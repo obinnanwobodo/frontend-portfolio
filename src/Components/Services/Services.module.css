@@ -1,7 +1,7 @@
 .genservices{
 background-color: #0d0f11;
 
-height: 95vh;
+height: 100vh;
 }
 
 
@@ -39,7 +39,7 @@ margin-top: 10px;
 .mainservicegen{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+    gap: 55px;
 position: relative;
 top: 60px;
 padding-left: 200px;

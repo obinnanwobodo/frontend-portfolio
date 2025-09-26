@@ -1,0 +1,100 @@
+.contactgen{
+    background-color: black;
+    height: 100vh;
+    color: #ffffff;
+}
+
+
+.gencontent{
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+  height: 384vh;
+    position: relative;
+    top: 70px;
+}
+
+
+.lr{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+.lc{
+font-size: 48px;
+font-family: system-ui;
+font-weight: 700;
+color: #fff2b3;
+    
+}
+
+
+.ready{
+font-size: 20px;
+color: #9aa2b1;
+font-family: system-ui;
+text-align: center;
+}
+
+
+.firstbox{
+display: flex;
+position: relative;
+top:50px;
+gap: 30px;
+}
+
+
+.waicn , .linkicn , .instaicn , .emailicn {
+background-color: #16181d;
+border-radius: 50%;
+padding: 10px;
+
+}
+
+
+.waicn svg, .linkicn svg, .instaicn svg, .emailicn svg{
+width: 32px;
+height: 32px;
+color: #9aa2b1;
+}
+
+
+.wa, .link, .insta, .email{
+font-size: 18px;
+color: #fff2b3;
+font-family: system-ui;
+font-weight: 500;
+
+}
+
+
+.box1, .box2, .box3, .box4{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+border: 1px solid #2e2e2e;
+padding: 30px;
+border-radius: 8px;
+gap: 15px;
+min-width: 200px;
+min-height: 180px;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.box1:hover, .box2:hover, .box3:hover, .box4:hover{
+    border: 1px solid  #ffcc33;
+   transform: translateY(-12px);
+}
+
+.box1:hover svg, .box2:hover svg, .box3:hover svg, .box4:hover svg{
+    color: #ffcc33;
+}
+
+.box1:hover .waicn, .box2:hover .linkicn, .box3:hover .instaicn, .box4:hover .emailicn{
+    background-color: #fff2b3;
+
+}
