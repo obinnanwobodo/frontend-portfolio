@@ -1,0 +1,50 @@
+.genfooter{
+    background-color: #121417;
+    padding: 30px;
+}
+
+
+.footercontent{
+display: flex;
+justify-content: space-between;
+}
+
+
+
+.leftset{
+
+}
+
+.on{
+font-size: 20px;
+color: #ffcc33;
+font-weight: 700;
+font-family: system-ui;
+
+}
+
+.fd{
+font-size: 16px;
+color: #9aa2b1;
+font-family: system-ui;
+
+}
+
+.rightset{
+
+}
+
+
+.copyright{
+font-size: 14px;
+color: #9aa2b1;
+font-family: system-ui;
+
+}
+
+.crafted{
+font-size: 12px;
+color: #9aa2b1;
+font-family: system-ui;
+
+}
