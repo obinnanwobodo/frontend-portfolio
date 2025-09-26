@@ -9,9 +9,9 @@
      display: flex;
     flex-direction: column;
     align-items: center;
-  height: 85vh;
+  min-height: 83vh;
     position: relative;
-    top: 53px;
+    top: 75px;
 }
 
 .se{
@@ -106,3 +106,119 @@ font-family: system-ui;
     margin-top: 20px;
    
 }
+
+
+
+
+
+/* RESPONSIVNESS */
+
+
+@media (max-width: 768px) {
+    .genskills {
+        padding-top: 5px;
+        padding-bottom: 40px;
+        height: 83vh;
+    }
+
+    .skillscontent {
+        padding: 0 15px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .se {
+        font-size: 32px;
+        margin-bottom: 5px;
+    }
+
+    .ac {
+        font-size: 16px;
+        padding: 0 10px;
+    }
+    
+    /* Center and resize the button container */
+    .segen {
+        margin-top: 40px;
+        max-width: 90%; 
+      
+        gap: 15px;
+        font-size: 14px;
+        padding: 5px 10px;
+    }
+    
+    .activeBtn {
+        padding: 7px 10px;
+    }
+    
+    .btn1, .btn2 {
+        padding: 7px 5px;
+    }
+
+    .te, .pq {
+        font-size: 22px;
+        margin-bottom: 10px;
+    }
+
+    /* Stack or wrap the skills lists effectively */
+    .tech, .soft {
+        display: flex;
+        flex-wrap: wrap; /* Allow items to wrap to the next line */
+        justify-content: center;
+        gap: 15px 25px; /* Vertical and horizontal gap */
+        margin-top: 10px;
+    }
+
+    .tech li, .soft li {
+        font-size: 14px;
+        /* Optional: Add a subtle background/border to each skill for better separation */
+        /* padding: 5px 10px;
+        border: 1px solid #ffcc33;
+        border-radius: 5px; */
+    }
+    
+    /* Ensure soft skills lists wrap cleanly */
+    .gensoft {
+        /* The gensoft container holds two .soft rows, so this ensures they are centered */
+        gap: 0;
+    }
+}
+
+
+
+
+@media (min-width: 769px) and (max-width: 1199px) {
+
+     .genskills {
+        padding-top: 25px;
+     }
+
+
+    .se {
+        font-size: 40px;
+    }
+
+    .ac {
+        font-size: 18px;
+    }
+    
+    .segen {
+        max-width: 300px; /* Slightly reduced button container size */
+        gap: 20px;
+    }
+
+    .te, .pq {
+        font-size: 26px;
+    }
+
+    .tech, .soft {
+        gap: 30px; /* Reduced gap for list items */
+        padding: 0 10px;
+    }
+    
+    .tech li, .soft li {
+        font-size: 17px;
+    }
+}
+

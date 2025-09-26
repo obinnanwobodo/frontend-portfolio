@@ -149,3 +149,99 @@ font-weight: 500;
     transform: translateY(12px); /* adjust how far it bounces */
   }
 }
+
+
+
+
+
+/* RESPONSIVNESS */
+
+
+@media (max-width: 768px) {
+    .container {
+        height: 100vh; /* Keep full viewport height */
+        padding: 0 15px;
+    }
+    
+    .inner {
+        top: 0; /* Center vertically better on mobile */
+        padding: 0 10px;
+        max-width: 100%;
+    }
+    
+    .heading {
+        font-size: 45px; /* Significantly reduced font size */
+        margin-bottom: 0.5rem;
+    }
+    
+    .textWrapper {
+        min-height: 3.5rem; /* Reduced minimum height */
+        align-items: center; /* Center the sub-heading vertically */
+        margin-bottom: 20px;
+    }
+    
+    .subHeading {
+        font-size: 20px; /* Reduced sub-heading size */
+    }
+
+    /* Adjust the <br/> tag in the crafting text so it doesn't leave an empty line */
+    .crafting br {
+        display: none;
+    }
+    
+    .crafting {
+        font-size: 16px;
+        line-height: 1.5;
+        margin-bottom: 25px;
+        padding: 0 10px;
+        white-space: normal; /* Allow text to wrap naturally */
+    }
+    
+    /* Stack buttons vertically on very small screens */
+    .btngen {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .btn1, .btn2 {
+        width: 100%; /* Full width buttons */
+        max-width: 250px; /* Limit max width for better centering */
+        margin: 0 auto;
+        font-size: 16px;
+        padding: 12px 0;
+    }
+    
+    .downicn {
+        top: 40px;
+    }
+}
+
+
+
+@media (min-width: 769px) and (max-width: 1199px) {
+    .inner {
+        max-width: 700px;
+        padding: 0 40px;
+    }
+    
+    .heading {
+        font-size: 60px; /* Reduced font size */
+    }
+    
+    .subHeading {
+        font-size: 30px; /* Reduced font size */
+        min-height: 4.5rem; /* Ensure space for two lines if text is long */
+    }
+    
+    .crafting {
+        font-size: 20px;
+      text-align: center;
+        white-space: normal;
+
+    }
+    
+    .btn1, .btn2 {
+        font-size: 17px;
+        padding: 10px 22px;
+    }
+}

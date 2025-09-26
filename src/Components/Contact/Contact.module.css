@@ -1,7 +1,7 @@
 .contactgen{
     background-color: black;
 border-bottom: 1px solid #2e2e2e;
-
+padding-bottom: 150px;
 }
 
 
@@ -9,7 +9,6 @@ border-bottom: 1px solid #2e2e2e;
   display: flex;
     flex-direction: column;
     align-items: center;
-  height: 135vh;
     position: relative;
     top: 70px;
 }
@@ -234,4 +233,180 @@ font-weight: 500;
 
 
 
+/* RESPONSIVNESS */
 
+
+@media (max-width: 768px) {
+    .contactgen {
+            padding-bottom: 150px;
+    }
+    
+    .gencontent {
+        padding: 0 15px;
+    }
+
+    .lc {
+        font-size: 32px;
+    }
+
+    .ready {
+        font-size: 16px;
+        padding: 0 10px;
+    }
+
+    /* 1. First Box (4 Icons): Switch to 1 column */
+    .firstbox {
+        flex-direction: column; /* Stack vertically */
+        gap: 15px;
+        padding: 0;
+        top: 30px;
+    }
+    
+    .box1, .box2, .box3, .box4 {
+        /* Full width for each box */
+        flex: 1 1 100%; 
+        min-height: 120px;
+        padding: 20px;
+    }
+    
+    .waicn svg, .linkicn svg, .instaicn svg, .emailicn svg {
+        width: 24px;
+        height: 24px;
+    }
+    
+    .wa, .link, .insta, .email {
+        font-size: 15px;
+    }
+
+    /* 2. Second Box (CTA Card) Adjustments */
+    .secondbox {
+        margin-top: 80px;
+        width: 100%; /* Full width of the content area */
+        padding: 25px 15px;
+        gap: 15px;
+    }
+    
+    .rtsyp {
+        font-size: 24px;
+    }
+    
+    .wether {
+        font-size: 16px;
+    }
+    
+    /* Stack Buttons Vertically */
+    .genbtn {
+        flex-direction: column; 
+        gap: 15px;
+        width: 100%;
+    }
+    
+    .btn1, .btn2 {
+        /* Make buttons fill the width of the card */
+        width: 100%;
+        max-width: 350px; 
+        margin: 0 auto;
+        padding: 10px 0;
+    }
+    
+    .lcow, .sae {
+        font-size: 16px;
+    }
+    
+    .btn1icn, .btn2icn {
+        /* Center icons within the button layout */
+        margin-left: 0; 
+    }
+}
+
+
+
+
+
+@media (min-width: 769px) and (max-width: 1199px) {
+    .contactgen {
+        display: flex;
+        flex-direction: column;
+         justify-content: center;
+        align-items: center;
+        padding-bottom: 100px; /* Maintain vertical space */
+    }
+    
+    .gencontent {
+        display: flex;
+        flex-direction: column;
+         justify-content: center;
+        align-items: center;
+        padding: 0 30px; /* Added side padding for tablet */
+    }
+
+    .lc {
+        font-size: 40px;
+    }
+
+    .ready {
+        font-size: 18px;
+        padding: 0 15px;
+    }
+
+    /* 1. First Box (4 Icons): Switch to 2 columns */
+    .firstbox {
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 23px;
+        top: 30px; 
+        max-width: 1000px; 
+    }
+    
+    .box1, .box2, .box3, .box4 {
+        /* Set to 2 items per row, calculating for the 20px gap: (100% - 20px) / 2 = 50% - 10px */
+        flex: 1 1 calc(70% - 10px); 
+        min-width: 320px; 
+        min-height: 150px;
+        padding: 25px;
+    }
+    
+    .waicn svg, .linkicn svg, .instaicn svg, .emailicn svg {
+        width: 28px;
+        height: 28px;
+    }
+    
+    .wa, .link, .insta, .email {
+        font-size: 16px;
+    }
+
+    /* 2. Second Box (CTA Card) Adjustments */
+    .secondbox {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 80px;
+        width: 100%; 
+        max-width: 800px; /* Max size constraint */
+        padding: 30px;
+        gap: 15px;
+    }
+    
+    .rtsyp {
+        font-size: 26px;
+    }
+    
+    .wether {
+        font-size: 18px;
+    }
+    
+    /* Buttons remain side-by-side */
+    .genbtn {
+        gap: 15px;
+    }
+    
+    .btn1, .btn2 {
+        padding: 9px 20px;
+    }
+    
+    .lcow, .sae {
+        font-size: 16px;
+    }
+}

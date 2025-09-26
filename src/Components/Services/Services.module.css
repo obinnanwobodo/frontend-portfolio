@@ -1,7 +1,7 @@
 .genservices{
 background-color: #0d0f11;
 
-height: 100vh;
+min-height: 100vh;
 }
 
 
@@ -33,6 +33,7 @@ color: #9aa2b1;
 font-family: system-ui;
 text-align: center;
 margin-top: 10px;
+max-width: 900px;
 }
 
 
@@ -78,4 +79,115 @@ gap: 10px;
 .ecomicn{
     position: relative;
     bottom: 15px;
+}
+
+
+
+
+
+/* RESPONSIVNESS */
+
+
+
+@media (max-width: 768px) {
+    .genservices {
+        padding-top: 0px;
+        padding-bottom: 230px;
+    }
+    
+    .servicecontent {
+        padding: 0 15px;
+    }
+
+    .sc {
+    }
+    
+    .services {
+        font-size: 32px;
+    }
+
+    .com {
+        font-size: 16px;
+        padding: 0 10px;
+    }
+
+    /* Mobile Grid: 1 column (stacks vertically) */
+    .mainservicegen {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        grid-template-columns: 1fr;
+        gap: 30px;
+        padding: 0;
+    }
+    
+    .mainservicegen h2 {
+        font-size: 20px;
+    }
+
+    .mainservicegen li {
+        font-size: 14px;
+        margin-left: 15px;
+    }
+    
+    .mainservicegen svg {
+        width: 20px;
+        height: 20px;
+    }
+
+    .ecomicn{
+        position: relative;
+        top: 1px;
+    }
+    
+    /* Center the titles and icons better on mobile */
+    .icnndsaas, .icnndb2b, .icnndecom, .icnndcustom, .icnndseo {
+        justify-content: center;
+        margin-bottom: 5px;
+    }
+    
+    /* Ensure list items and text are centered or left-aligned */
+    .saasgen, .b2bgen, .ecomgen, .customgen, .seogen {
+        padding: 10px;
+        text-align: left;
+    }
+}
+
+
+
+@media (min-width: 769px) and (max-width: 1199px) {
+    .servicecontent {
+        height: 120vh;
+        padding: 0 30px;
+    }
+    
+    .services {
+        font-size: 40px;
+    }
+    
+    .com {
+        font-size: 18px;
+    }
+
+    /* Tablet Grid: 2 columns */
+    .mainservicegen {
+       position: relative;
+       right: 55px;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px 30px;
+    }
+
+    .mainservicegen h2 {
+        font-size: 22px;
+    }
+
+    .mainservicegen li {
+        font-size: 15px;
+    }
+    
+    .mainservicegen svg {
+        width: 22px;
+        height: 22px;
+    }
 }

@@ -1,5 +1,5 @@
 .genrec{
-
+ padding-bottom: 150px;
     background-color: #121417;
    
 }
@@ -9,7 +9,7 @@
   display: flex;
     flex-direction: column;
     align-items: center;
-  height: 384vh;
+  
     position: relative;
     top: 70px;
 }
@@ -148,10 +148,15 @@ font-weight: 500;
 
 
 .desc{
-font-size: 18px;
-color: #9aa2b1;
-font-family: system-ui;
-margin-top: 18px;
+  font-size: 18px;
+  color: #9aa2b1;
+  font-family: system-ui;
+  margin-top: 18px;
+  line-height: 1.6;   /* readability */
+  text-align: justify; /* neat edges */
+  word-break: normal;
+  white-space: normal;
+  max-width: 600px;
 }
 
 .bldndtools{
@@ -212,4 +217,241 @@ color: #9aa2b1;
 .bldndbtn svg{
   width: 12px;
   height: 12px;
+}
+
+
+
+
+
+/* RESPONSIVNESS */
+
+
+
+@media (max-width: 768px) {
+    .genrec {
+        padding-top: 0px;
+        padding-bottom: 135px;
+    }
+
+    .gencontent {
+        padding: 0 15px;
+        
+
+    }
+
+    .rec {
+        font-size: 32px;
+    }
+
+    .thep {
+        font-size: 16px;
+        padding: 0 10px;
+    }
+
+    .eachofthem {
+        /* Reset to column flow for mobile */
+        flex-direction: column;
+        height: auto;
+        padding: 20px 15px;
+        margin-bottom: 30px;
+        text-align: center; /* Center text elements */
+    }
+
+    .eachcontent {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    /* Image container takes full width, height is dictated by aspect ratio */
+    .images {
+        min-width: 100%;
+        max-width: 100%;
+        min-height: auto;
+        max-height: auto;
+        padding: 15px;
+           display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .images img {
+        /* Ensure image scales down nicely */
+        max-width: 90%; 
+           display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .desktopimg img {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+        max-width: 90%;
+        position: relative;
+        left: 15px;
+    }
+    
+    /* Make mobile images larger, as they now take up the screen width */
+    .mobileimg img {
+         display: flex;
+      justify-content: center;
+      align-items: center;
+        max-width: 160px; /* Keep the max-width for the phone shape */
+        max-height: 300px; 
+    }
+
+    /* Center text elements */
+    .alltexts {
+        text-align: center;
+        width: 100%;
+    }
+    
+    .prona {
+        font-size: 24px;
+        margin-top: 10px;
+    }
+
+    .pronic {
+        font-size: 15px;
+    }
+
+    .desc {
+        font-size: 14px;
+         
+       
+    }
+    
+    /* Stack 'built with' and 'view project' on top of each other */
+    .bldndtools {
+        align-items: center;
+        margin-top: 15px;
+    }
+    
+    .bldndbtn {
+        flex-direction: column; /* Stack tools and button */
+        gap: 15px;
+        width: 100%;
+        align-items: center;
+    }
+
+    .tools {
+        justify-content: center; /* Center the tool items */
+        width: 100%;
+    }
+
+    .toolItem {
+        font-size: 13px;
+        padding: 3px 8px;
+    }
+    
+    .bldndbtn button {
+        /* Make the button fill a decent portion of the screen */
+        width: 100%;
+        max-width: 250px; 
+        font-size: 15px;
+        padding: 10px 0;
+    }
+}
+
+
+
+
+@media (min-width: 769px) and (max-width: 1199px) {
+
+
+  .genrec{
+
+  
+   
+}
+
+
+    .gencontent {
+        padding: 0 30px;
+        
+       
+    }
+
+    .genworksmap {
+        margin-top: 45px;
+    }
+
+    .rec {
+        font-size: 40px;
+    }
+
+    .thep {
+        font-size: 18px;
+    }
+
+   
+    .eachofthem {
+        padding: 20px; 
+    }
+
+    .eachcontent {
+        gap: 30px; 
+    }
+
+
+    .images {
+        min-width: 350px;
+        max-width: 350px;
+        min-height: 250px;
+        max-height: 250px;
+        padding: 8px;
+    }
+    
+    .desktopimg img {
+        max-width: 330px; 
+    }
+
+    .mobileimg img {
+        max-width: 130px;
+        max-height: 230px;
+    }
+
+    .prona {
+        font-size: 26px;
+    }
+
+    .pronic {
+        font-size: 16px;
+    }
+
+    .desc {
+        font-size: 16px;
+        margin-top: 15px;
+        max-width: none; 
+    }
+
+    .build {
+        font-size: 16px;
+    }
+
+
+    .bldndtools {
+        margin-top: 15px;
+    }
+    
+    .tools {
+        gap: 8px;
+        font-size: 14px;
+    }
+    
+    .toolItem {
+        padding: 3px 8px;
+    }
+    
+    .bldndbtn {
+
+        gap: 30px; 
+        align-items: flex-end; 
+    }
+
+    .bldndbtn button {
+        padding: 5px 12px;
+        font-size: 14px;
+        gap: 5px;
+    }
 }

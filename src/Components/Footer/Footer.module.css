@@ -1,12 +1,14 @@
 .genfooter{
     background-color: #121417;
     padding: 30px;
+    max-height: 24vh;
 }
 
 
 .footercontent{
 display: flex;
 justify-content: space-between;
+align-items: center;
 }
 
 
@@ -47,4 +49,40 @@ font-size: 12px;
 color: #9aa2b1;
 font-family: system-ui;
 
+}
+
+
+.icnndgit{
+display: flex;
+border: 1px solid #2e2e2e;
+padding: 2px 0px;
+justify-content: center;
+align-items: center;
+border-radius: 8px;
+max-width: 120px;
+position: relative;
+top: 6px;
+gap: 10px;
+}
+
+
+.giticn svg{
+color: #ffcc33;
+width: 20px;
+height: 20px;
+}
+
+.git{
+color: #9aa2b1;
+font-size: 17px;
+font-family: system-ui;
+}
+
+
+.gengit:hover p{
+    color: #ffcc33;
+}
+
+.gengit:hover svg{
+color: #9b7915;
 }

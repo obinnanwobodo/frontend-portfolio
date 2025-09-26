@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from './Footer.module.css'
-
+import { FiGithub } from "react-icons/fi";
 
 
 
@@ -15,6 +15,16 @@ const Footer = () => {
                 <div className={styles.leftset}>
                     <h2 className={styles.on}>Obinna Nwobodo</h2>
                     <p className={styles.fd}>Frontend Developer & Web Experience Builder</p>
+                    
+                  <a  className={styles.gengit} href="https://github.com/obinnanwobodo">
+
+                      <div className={styles.icnndgit}>
+                        <div className={styles.giticn}><FiGithub /></div>
+                      <p className={styles.git}>Github</p>
+                    </div>
+
+                  </a>
+
                 </div>
 
 

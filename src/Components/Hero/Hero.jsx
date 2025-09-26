@@ -3,6 +3,8 @@
 import React, { useEffect, useState } from 'react';
 import styles from './Hero.module.css'; // Import CSS Module
 import { FaChevronDown } from "react-icons/fa6";
+import SectionWrapper from '../sectionwrapper/SectionWrapper'
+
 
 
 
@@ -61,6 +63,7 @@ const Hero = () => {
   }, [charIndex, isTyping, phraseIndex, phrases]);
 
   return (
+
     <div className={styles.container}>
       <div className={styles.inner}>
         <h1 className={styles.heading}>Hi, I&apos;m Obinna</h1>
@@ -75,15 +78,17 @@ const Hero = () => {
           grow and connect with their audience.
         </p>
 
-        <div className={styles.btngen}>
-          <button className={styles.btn1}>
-            <a href="#projects">View My Work</a>
-          </button>
-          <button className={styles.btn2}>
-            <a href="#contact">Get In Touch</a>
-          </button>
-        </div>
 
+        <SectionWrapper>
+          <div className={styles.btngen}>
+            <button className={styles.btn1}>
+              <a href="#projects">View My Work</a>
+            </button>
+            <button className={styles.btn2}>
+              <a href="#contact">Get In Touch</a>
+            </button>
+          </div>
+        </SectionWrapper>
         <div className={styles.downicn}> <a href="#about"><FaChevronDown /></a> </div>
 
       </div>

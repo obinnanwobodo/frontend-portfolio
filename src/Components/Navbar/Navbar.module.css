@@ -6,8 +6,7 @@ padding: 20px;
 background-color: #121417;
 position: fixed;
 width: 100%;
-z-index: 9;
-overflow-x: hidden;
+z-index: 999;
 }
 
 
@@ -30,4 +29,67 @@ gap: 20px;
 
 .navlinks a:hover{
     color: #fce15e;
+}
+
+
+.hamburger {
+  display: none;
+  color: #ffcc33;
+  cursor: pointer;
+}
+
+/* RESPONSIVNESS */
+
+
+
+@media screen and (max-width: 768px) {
+
+.gennav{
+    position: relative;
+}
+
+  .navlinks {
+    display: none;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    flex-direction: column;
+    background: #121417;
+    width: 200px;
+    padding: 20px;
+  
+  }
+
+  .navlinks.active {
+    display: flex;
+        background: #121417;
+     position: absolute;
+   
+
+  }
+
+  .navlinks.active a{
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+  }
+}
+
+/* 769px - 1199px (TABLET / SMALL DESKTOP) */
+@media screen and (min-width: 769px) and (max-width: 1199px) {
+  .navlinks {
+  }
+
+    .gennav {
+        position: relative;
+        padding: 15px 30px; /* Slightly reduced padding */
+    }
+    
+    .navlinks {
+        gap: 15px; /* Slightly smaller gap */
+        font-size: 15px;
+    }
+    /* The main layout remains the same (flex row) */
 }
