@@ -1,7 +1,7 @@
 .genfooter{
     background-color: #121417;
     padding: 30px;
-    max-height: 24vh;
+    min-height: 24vh;
 }
 
 
@@ -85,4 +85,119 @@ font-family: system-ui;
 
 .gengit:hover svg{
 color: #9b7915;
+}
+
+
+
+
+
+
+
+/* RESPONSIVNESS */
+
+
+
+
+@media (min-width: 769px) and (max-width: 1122px) {
+    .genfooter {
+        padding: 30px 40px; /* Reduced padding */
+    }
+
+    .footercontent {
+        /* Keep existing space-between layout */
+    }
+
+    
+    
+    .on {
+        font-size: 18px;
+    }
+    
+    .fd {
+        font-size: 15px;
+    }
+    
+    .git {
+        font-size: 16px;
+    }
+
+    .copyright {
+        font-size: 13px;
+    }
+    
+    .crafted {
+        font-size: 11px;
+    }
+}
+
+
+
+@media (max-width: 768px) {
+    .genfooter {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 30px 20px;
+    }
+    
+    .footercontent {
+        flex-direction: column; /* Stack vertically */
+        text-align: center;
+        gap: 30px;
+    }
+
+    .leftset {
+        align-items: center; /* Center content */
+        gap: 8px;
+    }
+    
+    .on {
+        font-size: 18px;
+    }
+
+    .fd {
+        font-size: 14px;
+        margin-bottom: 15px;
+    }
+
+    /* GitHub Button */
+
+
+    .gengit{
+display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+
+    .icnndgit {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 130px;
+        padding: 8px 18px;
+    }
+
+    .giticn svg {
+        width: 18px;
+        height: 18px;
+    }
+
+    .git {
+        font-size: 15px;
+    }
+
+    .rightset {
+        align-items: center; /* Center content */
+        gap: 5px;
+    }
+
+    .copyright {
+        font-size: 12px;
+    }
+    
+    .crafted {
+        font-size: 10px;
+    }
 }
