@@ -159,7 +159,7 @@ font-weight: 500;
 
 @media (max-width: 768px) {
     .container {
-        height: 100vh; /* Keep full viewport height */
+       
         padding: 0 15px;
     }
     
@@ -167,6 +167,7 @@ font-weight: 500;
         top: 0; /* Center vertically better on mobile */
         padding: 0 10px;
         max-width: 100%;
+        margin-bottom: 35px;
     }
     
     .heading {
