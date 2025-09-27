@@ -31,27 +31,26 @@ const Hero = () => {
     let timeoutId;
 
     if (isTyping) {
-      // Still typing characters
+
       if (charIndex < currentPhrase.length) {
         timeoutId = setTimeout(() => {
           setText(prev => prev + currentPhrase.charAt(charIndex));
           setCharIndex(prev => prev + 1);
         }, TYPING_SPEED);
       } else {
-        // Finished typing the full phrase -> wait before starting deletion
         timeoutId = setTimeout(() => {
-          setIsTyping(false); // begin deleting after pause
+          setIsTyping(false);
         }, PAUSE_BEFORE_DELETE);
       }
     } else {
-      // Deleting characters
+
+
       if (charIndex > 0) {
         timeoutId = setTimeout(() => {
           setText(prev => prev.slice(0, -1));
           setCharIndex(prev => prev - 1);
         }, DELETING_SPEED);
       } else {
-        // Finished deleting -> move to next phrase after a short pause and start typing again
         timeoutId = setTimeout(() => {
           setIsTyping(true);
           setPhraseIndex(prev => (prev + 1) % phrases.length);
