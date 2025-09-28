@@ -33,7 +33,7 @@ const About = () => {
                         </p>
                     </div>
                 </SectionWrapper>
-            
+
             </div>
         </div>
 
